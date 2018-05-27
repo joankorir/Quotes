@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
-import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
@@ -12,7 +11,6 @@ import { DateCountPipe } from './date-count.pipe';
     AppComponent,
     QuotesComponent,
     QuoteDetailsComponent,
-    StrikethroughDirective,
     DateCountPipe
   ],
   imports: [
