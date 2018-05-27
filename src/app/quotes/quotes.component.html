@@ -8,5 +8,7 @@
 
         <app-quote-details  *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuotes($event,i)' ></app-quote-details>
     </div>
-</ul>
-<p *ngIf='quotes.length > 5'>You have too many quotes</p>
+    
+        
+    </ul>
+<p *ngIf='quotes.length > 90'>You have the highest votes</p>
