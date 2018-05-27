@@ -1,3 +1,10 @@
-<p>
-  quotes works!
-</p>
+<h1>Encouraging Quotes</h1>
+<hr>
+
+<ul>
+    <div *ngFor='let quote of quotes'>
+        <li >{{quote.name}}</li> 
+        <app-quote-details [goal]='quote'></app-quote-details>
+    </div>
+</ul>
+<p *ngIf='quotes.length > 5'>You have too many quotes</p>

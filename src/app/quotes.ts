@@ -1,3 +1,5 @@
 export class Quotes {
-    constructor(public id:Number, public name:string){}
+    public  showDescription:Boolean;
+    
+    constructor(public id:Number, public name:string, public description:string){}
 }
