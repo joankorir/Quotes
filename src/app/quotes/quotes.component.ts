@@ -23,11 +23,22 @@ export class QuotesComponent implements OnInit {
      
   ]
 
+  completeQuotes(isComplete,index){
+    if (isComplete){
+        this.quotes.splice(index,1);
+        }
+        }
+  Details(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
+
+
 
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
+  
 
 }
