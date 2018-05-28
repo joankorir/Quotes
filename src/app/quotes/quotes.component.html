@@ -1,22 +1,19 @@
 <h1>Encouraging Quotes</h1>
 <hr>
 
- <div class="container font-style:Monospace">
-     <div class="row" *ngFor='let quote of quotes;let i=index'>
-       <app-quote-form(addQuote)="addNewQuote($event)"></app-quote-form>
+       <div class="row" *ngFor="let quote of quotes;let i='index'">
+
+             <li>{{quote.name}}due on {{quote.DurationTime|date}}</li>
+             <button  (click)='Details(i)'>Details</button>
+
+          <ul>
+            <div>
+                <div *ngIf="quote.showDescription"></div>
+                   <app-quote-details  *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'DeleteQuotes($event,i)' ></app-quote-details>
+                   <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+                   
+            </div>
 
 
-
-<ul>
-    <div class="row  text-align:left">
-        <li >{{quote.name}}</li>
-        <button  (click)='Details(i)'>Details</button>
-
-
-        <app-quote-details  *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'DeleteQuotes($event,i)' ></app-quote-details>
-    </div>
-
-
-    </ul>
-</div>
-</div>
+          </ul>
+      </div>

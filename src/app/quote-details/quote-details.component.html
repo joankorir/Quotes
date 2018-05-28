@@ -1,6 +1,11 @@
-<p>{{quote.description}}</p>
-<p>This quote has been existing over this period {{quote.completeDate|dateCount}} days</p>
-<button  (click)='QuotesDelete(true)'>Delete Quotes</button>
-<button (click) ='VoteUp(True)'>Upvote</button>
-<button (click) ='VoteDown(True)'>Downvote</button>
+
+    <p>{{quote.description}}</p>
+
+    <p>This quote has been existing over this period {{quote.DurationTime|dateCount}} days</p>
+
+    <button  id="delete" (click)='QuotesDelete(true)'>Delete Quotes</button>
+    
+    
+ </div>
+
 
