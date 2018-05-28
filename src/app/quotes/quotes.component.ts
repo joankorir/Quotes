@@ -27,11 +27,7 @@ export class QuotesComponent implements OnInit {
         }
         }
       }
-    VoteUp(isComplete,index){
-      if (isComplete){
-       this.votes
-      }
-    } 
+   
         
   Details(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;

@@ -10,7 +10,7 @@
         <button  (click)='Details(i)'>Details</button>
         
 
-        <app-quote-details  *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'DeleteQuotes($event,i)'(isComplete)='VoteUp($event,i)'(isComplete)='VoteDown($event,i)') ></app-quote-details>
+        <app-quote-details  *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'DeleteQuotes($event,i)' ></app-quote-details>
     </div>
     
         
