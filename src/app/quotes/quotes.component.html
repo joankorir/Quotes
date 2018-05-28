@@ -3,7 +3,7 @@
 
  <div class="container font-style:Monospace">
      <div class="row" *ngFor='let quote of quotes;let i=index'>
-       <app-quote-form></app-quote-form>
+       <app-quote-form(addQuote)="addNewQuote($event)"></app-quote-form>
 
 
 

@@ -20,6 +20,7 @@ Display {{newQuote.Quote}}
 
             </div>
             <button type="submit">Add Quote</button>
+            <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
         </form>
     </div>
 </div>
