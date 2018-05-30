@@ -1,22 +1,33 @@
-<h1>Encouraging Quotes</h1>
-<hr> 
-                <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-                 
-                    <div *ngFor="let quote of quotes;let i=index">
-                <div class="class1">
+<div class="container  body ">
+  <div class="Quote" style="font-family: Georgia, 'Times New Roman', Times, serif; padding:50px; text-align: center; background-image: url('../assets/images.png'); background-repeat:no-repeat">
+    <h1>Encouraging Quotes</h1>
+  </div>
 
-                        <button id="details" (click)='Details(i)'>Details </button> &nbsp;
+  <hr>
 
-                        <button id="upvote" (click)='Upvote(i)'> Upvote:{{quote.Upvote}}  </button>   &nbsp;
- 
-                        <button  id="down" (click) ='Downvote(i)'>Downvote:{{quote.Downvote}}</button> 
-              
-                        <app-quote-details  *ngIf="quote.showQuote" [quote]='quote' (isComplete)= 'DeleteQuotes($event,i)' ></app-quote-details>
-            
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 
-                </div>
-                    
-                 </div>  
 
-      
-     
+      <div *ngFor="let quote of quotes;let i=index">
+        <ul>
+          <div class="bor">
+              <li id="{{i}}">{{quote.quote}} due on {{quote.DurationTime|date}}</li>
+
+          </div>
+         
+
+        </ul>
+
+
+        <button class="btn btn-primary" id="details" (click)='Details(i)'>Details </button> &nbsp;
+
+        <button id="upvote" class="btn btn-success btn-lg" (click)='Upvote(i)'> Upvote:{{quote.Upvote}} </button> &nbsp;
+
+        <button id="down" class="btn btn-danger " (click)='Downvote(i)'>Downvote:{{quote.Downvote}}</button>
+
+        <app-quote-details *ngIf="quote.showQuote" [quote]='quote' (isComplete)='DeleteQuotes($event,i)'></app-quote-details>
+      </div>
+    
+
+    
+</div>

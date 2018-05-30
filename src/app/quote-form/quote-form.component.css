@@ -1,12 +1,4 @@
-#author{
-    background-color:aquamarine;
-    
-}
-
-#quote{
-    background-color: aquamarine;
-}
-
-#publisher{
-    background-color: aquamarine;
+.row1{
+    font-style: oblique;
+    font-size: 10px;
 }

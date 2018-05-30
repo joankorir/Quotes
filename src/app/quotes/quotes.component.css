@@ -1,15 +1,14 @@
-/* .jumbotron{
-    background-image: url('../Quotes/images.jpeg');
-    font-tfamily: monospace;
-
-
-} */
-#details{
-    font-size: 20px;
-    float: left;
-    font-style: italic;
-        
-
+.body{
+    background-image: url('../../assets/quote.jpeg');
+    font-family: monospace;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:290%;
+} 
+.bor{
+    font-size: 15px;
+    font-style: normal;
 }
+
 
 
