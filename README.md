@@ -1,4 +1,3 @@
-# pigDice
 
 # Quotes
 #### {Consists of Quotes}, {15,5,2018}
