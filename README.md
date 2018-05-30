@@ -12,6 +12,7 @@ existing over .They app has different types of Quote.}
 ##Setup/installation Requirements##
 
 {clone  this repo (git clone https://github.com/joankorir/Quotes)
+First you need to have installed the node.js,watchman and also the Typescript for you to access the app.}
 
 ##Technologies used##
 
