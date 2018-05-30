@@ -20,7 +20,7 @@ export class QuotesComponent implements OnInit {
 
   DeleteQuotes(isComplete,index){
     if (isComplete){
-      let toDelete=confirm(`Are you sure you want to delete ${this.quotes[index].Quote}`)
+      let toDelete=confirm(`Are you sure you want to delete ${this.quotes[index].quote}`)
 
     if (isComplete){
         this.quotes.splice(index,1);
@@ -30,8 +30,8 @@ export class QuotesComponent implements OnInit {
       }
 
 
-  Details(index){
-    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  Details( index){
+    this.quotes[index].showQuote = !this.quotes[index].showQuote;
   }
   Upvote(i){
     this.quotes[i].Upvote +=1;
@@ -46,12 +46,6 @@ export class QuotesComponent implements OnInit {
     quote.DurationTime= new Date(quote.DurationTime)
     this.quotes.push(quote)
   }
-
-
-
-
-
-
 
   constructor() { }
 

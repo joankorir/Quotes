@@ -1,14 +1,12 @@
-#Person{
-    color:blue;
-    text-align: left;
+#author{
+    background-color:aquamarine;
+    
 }
-#Quote{
-    font-size: 0px;
-     color :blue;
-     text-align: left;
 
+#quote{
+    background-color: aquamarine;
 }
-#Author{
-    text-align: right;
 
+#publisher{
+    background-color: aquamarine;
 }

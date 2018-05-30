@@ -10,7 +10,7 @@ export class QuoteDetailsComponent implements OnInit {
 
 
 
-  @Input()quote:Quotes;
+  @Input() quote: Quotes;
   @Output() isComplete =new EventEmitter<boolean>();
 
 QuotesDelete(complete:boolean){
