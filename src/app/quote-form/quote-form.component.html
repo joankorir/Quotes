@@ -30,11 +30,25 @@
 
                  </div>
                 </div> 
-                <button type="submit" >Add Quote</button> 
+
+                <div class="form-group">
+                    <label for="DurationTime">DurationTime</atelabel>
+                    <input class="date" class="form-control"  id="d" [(ngModel)]="newQuotes.DurationTime" name="DurationTime" #DurationTime="ngModel" required>
+                 <div [hidden]="DurationTime.valid||DurationTime.pristine" class="alert alert-danger">
+
+                 </div>
+                </div> 
+
+
+
+
+
+
+
+                <button type="submit" >Add Quote</button>
 
                </form> 
-                
-               
+
               </div>
             </div>
           
