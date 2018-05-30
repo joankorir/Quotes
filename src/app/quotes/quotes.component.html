@@ -7,9 +7,9 @@
 
                         <button id="details" (click)='Details(i)'>Details </button> &nbsp;
 
-                        <button id="upvote" (click)='Upvote(i)'> Upvote  </button>   &nbsp;
+                        <button id="upvote" (click)='Upvote(i)'> Upvote:{{quote.Upvote}}  </button>   &nbsp;
  
-                        <button  id="down" (click) ='Downvote(i)'>Downvote</button> 
+                        <button  id="down" (click) ='Downvote(i)'>Downvote:{{quote.Downvote}}</button> 
               
                         <app-quote-details  *ngIf="quote.showQuote" [quote]='quote' (isComplete)= 'DeleteQuotes($event,i)' ></app-quote-details>
             
