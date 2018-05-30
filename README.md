@@ -25,4 +25,4 @@ First you need to have installed the node.js,watchman and also the Typescript fo
 {One can approach me on my email joankorir44@gmail.com when you encounter a problem.}
 
 [link to live site on Github Pages]
-  ()
+  ( https://joankorir.github.io/Quotes/)
